@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Trips - Exploro Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exploro Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about_contact.html">About/Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trips-list">
+            <h2>Browse Trips</h2>
+            <div class="trips-container">
+                <!-- Dynamic trips will go here -->
+            </div>
+        </section>
+
+        <section id="map-section">
+            <h2>Explore Locations</h2>
+            <div id="map"></div>
+        </section>
+
+        <section id="filter-section">
+            <h2>Filter Trips</h2>
+            <form id="filter-form">
+                <!-- Price Filter -->
+                <label for="price-filter">Price:</label>
+                <select id="price-filter" name="price">
+                    <option value="all">All</option>
+                    <option value="low">Below $1000</option>
+                    <option value="medium">$1000 - $1500</option>
+                    <option value="high">Above $1500</option>
+                </select>
+        
+                <!-- Date Filter -->
+                <label for="date-filter">Date:</label>
+                <select id="date-filter" name="date">
+                    <option value="all">All</option>
+                    <option value="upcoming">Upcoming Trips</option>
+                </select>
+        
+                <!-- Location Filter -->
+                <label for="location-filter">Location:</label>
+                <input type="text" id="location-filter" name="location" placeholder="Enter location (e.g., Paris)">
+        
+                <!-- Submit Button -->
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Exploro Club. All rights reserved.</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>

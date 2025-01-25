@@ -12,8 +12,10 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
                 <li><a href="about_contact.html">About/Contact</a></li>
                 <li><a href="login.html">Login</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -22,25 +24,13 @@
     <main>
         <section id="trips">
             <h2>Upcoming Trips</h2>
-            <div class="trip">
-                <h3>Trip to Paris</h3>
-                <p>Description: Explore the city of lights!</p>
-                <p>Dates: March 15-20</p>
-                <p>Price: $1200</p>
-                <button onclick="alert('Trip to Paris booked!')">Book Now</button>
-            </div>
-            <div class="trip">
-                <h3>Trip to Bali</h3>
-                <p>Description: Relax on beautiful beaches.</p>
-                <p>Dates: April 5-10</p>
-                <p>Price: $900</p>
-                <button onclick="alert('Trip to Bali booked!')">Book Now</button>
-            </div>
+            <div id="trip-container"></div> <!-- This will be filled dynamically -->
         </section>
+        
     </main>
 
     <footer>
-        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+        <p>&copy; 2025 Exploro Club. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
